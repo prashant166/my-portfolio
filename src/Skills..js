@@ -15,6 +15,7 @@ const Skills = () => {
         ml="auto"
         mr="auto"
         mt="2rem"
+        mb="10rem"
         display="grid"
         gridTemplateColumns={isNotMobile ? "repeat(4,1fr)" : "repeat(3,1fr)"}
       >
@@ -29,7 +30,7 @@ const Skills = () => {
           />
           <Langs
             name="Tailwind CSS"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
           />
           <Langs
             name="Material UI"
@@ -68,8 +69,38 @@ const Skills = () => {
           />
 
           <Langs
+            name="Firebase"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+          />
+
+          <Langs
+            name="MySQL"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+          />
+
+          <Langs
+            name="Google Cloud"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
+          />
+
+          <Langs
+            name="Azure"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
+          />
+
+          <Langs
+            name="Spring Boot"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg"
+          />
+
+          <Langs
             name="Python"
             url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+          />
+
+          <Langs
+            name="Java"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
           />
 
           <Langs
@@ -80,16 +111,6 @@ const Skills = () => {
           <Langs
             name="C"
             url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-          />
-
-          <Langs
-            name="Java"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-          />
-
-          <Langs
-            name="Flutter"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
           />
 
           <Langs

@@ -45,7 +45,7 @@ const ContactModal = ({ name, url, desc }) => {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
                 sx={{
-                    backdropFilter: "blur(6px)", // Add backdrop filter for blur effect
+                    backdropFilter: "blur(0px)", // Add backdrop filter for blur effect
                     backgroundColor: "#F0F0F047", // Adjust the rgba values as needed
                 }}
             >

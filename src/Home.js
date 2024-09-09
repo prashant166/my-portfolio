@@ -176,9 +176,9 @@ const Home = () => {
                   textAlign: "center",
                 }}
               >
-                Hi! I'm a Full Stack Web Developer <br />
-                I like to design and develop <br />
-                I love coffee <br />
+                Welcome to my digital playground! <br />
+                I love making apps and websites <br />
+                Have a look around! <br />
               </Typography>
 
               <button

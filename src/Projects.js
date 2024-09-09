@@ -3,10 +3,13 @@ import Heading from "./components/heading";
 import { useMediaQuery } from "@mui/material";
 import Navbar from "./components/navbar";
 import myfolio from "./images/myfolio.png";
+import mvr from "./images/mvr.png";
 import fashioned from "./images/fashioned.png";
+import transactions from "./images/transactions.png";
 import learnify from "./images/learnify.png";
 import { Fade } from "react-awesome-reveal";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import ProjectComponent from "./components/projects";
 
 const Projects = () => {
   const isNotMobile = useMediaQuery("(min-width:1024px)");
@@ -25,120 +28,54 @@ const Projects = () => {
         mb="10rem"
       >
         <Fade cascade damping={0.1}>
-          <Box flexBasis="100%" pb="2rem" borderBottom="1.5px solid #8F98A07D">
-            <Typography
-              // backgroundColor="#FEFFFFEA"
-              fontSize="1.5rem"
-              fontFamily={"Poppins"}
-              color="#C9F4FB"
-              fontWeight={400}
-              pl="1rem"
-              pr="1rem"
-              pt="0.5rem"
-            >
-              {"    >>  "}Fashioned - Social Media Application
-            </Typography>
-            <Box display="flex" flexDirection={isNotMobile ? "row" : "column"}>
-              <img
-                src={fashioned}
-                width={isNotMobile ? "40%" : "100%"}
-                alt="pic"
-                style={{
-                  padding: "1rem",
-                }}
-              />
-              <Typography fontFamily={"Poppins"} p="1rem" color="#FFFFFF">
-                Designed and built a social media web application that does CRUD
+          <ProjectComponent
+            title="Movie Recommmendation System"
+            description="Implemented a recommendation system to display top five movies
+                closest to the movie selected by users. Used content-based
+                filtering and cosine similarity to measure movie feature
+                similarity. Preprocessed and analyzed movie datasets to extract
+                relevant features such as genres, directors, and actors.
+                Deployed the application with Streamlit Cloud Services."
+            tech="Sci-Kit Learn, Pandas, Python, Streamlit"
+            img={mvr}
+            link="https://advika-recommends-movies.streamlit.app/"
+            isNotMobile={true}
+          />
+
+          <ProjectComponent
+            title="Myfolio-Portfolio Building Application"
+            description="Designed and built an online platform to help users create personal portfolios, and turn them into deployable websites to use for job applications and hiring."
+            tech="MongoDB, Express.js, Node.js, EJS, CSS"
+            img={myfolio}
+            link="https://myfolio-backend.onrender.com/"
+            isNotMobile={true}
+          />
+
+          <ProjectComponent
+            title="Transactions Tracker"
+            description="  Developed a robust Spring Boot application to help users
+                efficiently track their daily transactions. Utilized Microsoft
+                Azure to create, deploy and manage a secure, cloud-based MySQL
+                database, ensuring data integrity and scalability."
+            tech="Spring Boot, Microsoft Azure, Thymeleaf, MySQL,
+                  Bootstrap"
+            img={transactions}
+            link="https://moneytrac-c8fdfjdfavb9f5g7.eastus-01.azurewebsites.net/transactions"
+            isNotMobile={true}
+          />
+
+          <ProjectComponent
+            title="Fashioned - Social Media Application"
+            description=" Designed and built a social media web application that does CRUD
                 operations made specially for the community of fashion freaks.
                 Users can upload their posts with images and captions related to
                 new emerging fashion trends, and show off their outfits to their
-                friend users.
-                <br />
-                <br />
-                <Typography color="#7FE3F2" fontFamily={"Poppins"}>
-                  Tech Stack : MongoDB, ExpressJs, ReactJs, NodeJs, Material UI{" "}
-                  <br />
-                  <br />
-                </Typography>
-                <Box
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="space-between"
-                  border="1px solid white"
-                  width="fit-content"
-                  borderRadius="5px"
-                  padding="0.3rem"
-                >
-                  <a
-                    href="https://fashioned.netlify.app"
-                    target="_blank"
-                    rel="noreferrer"
-                    fontSize="10px"
-                  >
-                    Open <OpenInNewIcon fontSize="small" />
-                  </a>
-                </Box>
-              </Typography>
-            </Box>
-          </Box>
-
-          {/* //second */}
-
-          <Box flexBasis="100%" pb="2rem" borderBottom="1.5px solid #8F98A07D">
-            <Typography
-              fontSize="1.5rem"
-              fontFamily={"Poppins"}
-              color="#BDE0E6"
-              fontWeight={400}
-              pr="1rem"
-              pt="0.5rem"
-              pl="1rem"
-            >
-              {"    >>  "}Myfolio - Portfolio Building Application
-            </Typography>
-            <Box display="flex" flexDirection={isNotMobile ? "row" : "column"}>
-              <img
-                src={myfolio}
-                width={isNotMobile ? "40%" : "100%"}
-                alt="pic"
-                style={{
-                  padding: "1rem",
-                }}
-              />
-              <Typography fontFamily={"Poppins"} p="1rem">
-                Designed and built an online platform to help users create
-                personal portfolios, and turn them into deployable websites to
-                use for job applications and hiring.
-                <br />
-                <br />
-                <Typography color="#7FE3F2" fontFamily={"Poppins"}>
-                  Tech Stack: MongoDB, Express.js, Node.js, EJS, CSS
-                  <br />
-                  <br />
-                </Typography>
-                <Box
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="space-between"
-                  border="1px solid white"
-                  width="fit-content"
-                  borderRadius="5px"
-                  padding="0.3rem"
-                >
-                  <a
-                    href="https://myfolio-backend.onrender.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    fontSize="10px"
-                  >
-                    Open <OpenInNewIcon fontSize="small" />
-                  </a>
-                </Box>
-              </Typography>
-            </Box>
-          </Box>
-
-          {/* third */}
+                friend users."
+            tech="MongoDB, ExpressJs, ReactJs, NodeJs, Material UI"
+            img={fashioned}
+            link="https://fashioned.netlify.app"
+            isNotMobile={true}
+          />
 
           <Box flexBasis="100%">
             <Typography

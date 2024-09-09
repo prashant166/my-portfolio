@@ -1,11 +1,11 @@
-import { Box, Typography } from "@mui/material";
+import React from "react";
+import { Box, Typography, Modal, Button } from "@mui/material";
 import Heading from "./components/heading";
 import Navbar from "./components/navbar";
 import { useMediaQuery } from "@mui/material";
 import file from "./images/file.png";
-import { Modal } from "@mui/material";
 import { useState } from "react";
-import resume from "./images/resume.pdf";
+import resume from "./images/advika_resume (7).pdf";
 import ContactModal from "./components/contact";
 import { Fade } from "react-awesome-reveal";
 
@@ -24,9 +24,17 @@ const style = {
 
 const Contact = () => {
   const isNotMobile = useMediaQuery("(min-width:1024px)");
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+
+  // Separate state for each modal
+  const [openFirstModal, setOpenFirstModal] = useState(false);
+  const [openSecondModal, setOpenSecondModal] = useState(false);
+
+  // Separate handleOpen and handleClose for each modal
+  const handleOpenFirstModal = () => setOpenFirstModal(true);
+  const handleCloseFirstModal = () => setOpenFirstModal(false);
+
+  const handleOpenSecondModal = () => setOpenSecondModal(true);
+  const handleCloseSecondModal = () => setOpenSecondModal(false);
 
   return (
     <Box>
@@ -42,14 +50,14 @@ const Contact = () => {
           mr="auto"
           mt="6rem"
         >
-          {/* File 1 */}
+          {/* First File */}
           <Box>
             <button
               style={{
                 border: "none",
                 cursor: "pointer",
               }}
-              onClick={handleOpen}
+              onClick={handleOpenFirstModal}
             >
               <Box>
                 <img src={file} width="100px" alt="pic" />
@@ -57,14 +65,14 @@ const Contact = () => {
               </Box>
             </button>
             <Modal
-              open={open}
+              open={openFirstModal}
               borderRadius="10px"
-              onClose={handleClose}
+              onClose={handleCloseFirstModal}
               aria-labelledby="modal-modal-title"
               aria-describedby="modal-modal-description"
               sx={{
-                backdropFilter: "blur(1px)", // Add backdrop filter for blur effect
-                backgroundColor: "rgba(49, 48, 48, 0.8)", // Adjust the rgba values as needed
+                backdropFilter: "blur(0px)",
+                backgroundColor: "rgba(49, 48, 48, 0.8)",
               }}
             >
               <Box sx={style}>
@@ -134,6 +142,12 @@ const Contact = () => {
             name="leetcode"
             url="https://leetcode.com/advika_kharat"
             desc="view leetcode profile"
+          />
+
+          <ContactModal
+            name="source code"
+            url="https://github.com/advika-kharat/portfolio-website"
+            desc="view source code"
           />
         </Box>
       </Fade>
