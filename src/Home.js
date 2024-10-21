@@ -82,7 +82,7 @@ const Home = () => {
               sequence={[
                 `const Portfolio = () => {\n ‎ ‎ const name="Advika Kharat";\n‎ ‎  const bio="Full Stack Web Developer"; \n ‎ ‎ const handleClick = () => {\n  ‎ ‎ ‎ ‎ navigate("/nextPage");\n‎ ‎  }\n ‎ ‎ return (\n  ‎ ‎ ‎ ‎ <button onClick={handleClick}> get to know me better </button>\n )\n ‎ ‎ export default Portfolio;
     
-                `, // actual line-break inside string literal also gets animated in new line, but ensure there are no leading spaces
+                `, 
                 300,
               ]}
               repeat={Infinity}
