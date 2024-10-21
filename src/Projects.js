@@ -29,26 +29,24 @@ const Projects = () => {
       >
         <Fade cascade damping={0.1}>
           <ProjectComponent
-            title="Movie Recommmendation System"
-            description="Implemented a recommendation system to display top five movies
-                closest to the movie selected by users. Used content-based
-                filtering and cosine similarity to measure movie feature
-                similarity. Preprocessed and analyzed movie datasets to extract
-                relevant features such as genres, directors, and actors.
-                Deployed the application with Streamlit Cloud Services."
-            tech="Sci-Kit Learn, Pandas, Python, Streamlit"
-            img={mvr}
-            link="https://advika-recommends-movies.streamlit.app/"
-            isNotMobile={true}
-          />
-
-          <ProjectComponent
             title="Myfolio-Portfolio Building Application"
             description="Designed and built an online platform to help users create personal portfolios, and turn them into deployable websites to use for job applications and hiring."
             tech="MongoDB, Express.js, Node.js, EJS, CSS"
             img={myfolio}
             link="https://myfolio-backend.onrender.com/"
-            isNotMobile={true}
+            isNotMobile={isNotMobile}
+          />
+
+          <ProjectComponent
+            title="Movie Recommmendation System"
+            description="Implemented a recommendation system to display top five movies
+                closest to the movie selected by users. Used content-based
+                filtering and cosine similarity to measure movie feature
+                similarity."
+            tech="Sci-Kit Learn, Pandas, Python, Streamlit"
+            img={mvr}
+            link="https://advika-recommends-movies.streamlit.app/"
+            isNotMobile={isNotMobile}
           />
 
           <ProjectComponent
@@ -60,8 +58,8 @@ const Projects = () => {
             tech="Spring Boot, Microsoft Azure, Thymeleaf, MySQL,
                   Bootstrap"
             img={transactions}
-            link="https://moneytrac-c8fdfjdfavb9f5g7.eastus-01.azurewebsites.net/transactions"
-            isNotMobile={true}
+            link="https://github.com/advika-kharat/moneytracc"
+            isNotMobile={isNotMobile}
           />
 
           <ProjectComponent
@@ -74,7 +72,7 @@ const Projects = () => {
             tech="MongoDB, ExpressJs, ReactJs, NodeJs, Material UI"
             img={fashioned}
             link="https://fashioned.netlify.app"
-            isNotMobile={true}
+            isNotMobile={isNotMobile}
           />
 
           <Box flexBasis="100%">
