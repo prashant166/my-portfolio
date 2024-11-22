@@ -20,6 +20,41 @@ const Skills = () => {
         gridTemplateColumns={isNotMobile ? "repeat(4,1fr)" : "repeat(3,1fr)"}
       >
         <Fade cascade damping={0.1}>
+          {/* Core Development Skills */}
+          <Langs
+            name="Python"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+          />
+          <Langs
+            name="C++"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+          />
+          <Langs
+            name="JavaScript"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+          />
+          <Langs
+            name="React"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+          />
+          <Langs
+            name="Node.js"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+          />
+          <Langs
+            name="Express.js"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+          />
+          <Langs
+            name="Redux"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+          />
+          <Langs
+            name="TypeScript"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+          />
+
+          {/* Frontend Skills */}
           <Langs
             name="HTML"
             url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
@@ -28,95 +63,57 @@ const Skills = () => {
             name="CSS"
             url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
           />
-          <Langs
+          {/* <Langs
             name="Tailwind CSS"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-          />
+            url="https://github.com/devicons/devicon/tree/v2.16.0/icons/tailwindcss/tailwindcss-plain.svg"
+          /> */}
           <Langs
-            name="Material UI"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
-          />
-
-          <Langs
-            name="Javascript"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-          />
-
-          <Langs
-            name="ReactJs"
+            name="React Native"
             url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
           />
 
-          <Langs
-            name="Figma"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-          />
-
-          <Langs
-            name="ExpresJs"
-            exp="yes"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-          />
-
-          <Langs
-            name="NodeJs"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
-          />
-
+          {/* Backend and Databases */}
           <Langs
             name="MongoDB"
             url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
           />
-
-          <Langs
-            name="Firebase"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
-          />
-
           <Langs
             name="MySQL"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
           />
-
           <Langs
-            name="Google Cloud"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
+            name="PostgreSQL"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
           />
 
+          {/* Tools and Supporting Technologies */}
           <Langs
-            name="Azure"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
+            name="Kafka"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg"
           />
-
           <Langs
-            name="Spring Boot"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg"
+            name="WebSockets"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
           />
-
-          <Langs
-            name="Python"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-          />
-
-          <Langs
-            name="Java"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
-          />
-
           <Langs
             name="Git"
             url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
           />
-
           <Langs
-            name="C"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+            name="GitHub"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+          />
+          <Langs
+            name="Google Cloud"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
+          />
+          <Langs
+            name="Postman"
+            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
           />
 
-          <Langs
-            name="Canva"
-            url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
-          />
+          {/* Programming Languages */}
+          
         </Fade>
       </Box>
 

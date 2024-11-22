@@ -1,10 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import Heading from "./components/heading";
 import Navbar from "./components/navbar";
-import jyra from "./images/jyra.png";
-import nodebrew from "./images/nodebrew.png";
 import { Fade } from "react-awesome-reveal";
 import { useMediaQuery } from "@mui/material";
+
+const atomxelLogo = "https://media.licdn.com/dms/image/v2/C4E0BAQE_SAlUpXqgyg/company-logo_200_200/company-logo_200_200/0/1633429515481?e=1740614400&v=beta&t=UVtOYnIY84MuDwT9u1bzVcvRz62ouxmI8k4FRCloO5E";
 
 const Exp = () => {
   const isNotMobile = useMediaQuery("(min-width:1024px)");
@@ -14,6 +14,7 @@ const Exp = () => {
 
       <Box mt="3rem" maxWidth={"80%"} ml="auto" mr="auto">
         <Fade cascade damping={0.5}>
+          {/* AtomXel Experience */}
           <Box border="1px solid #13BAD4" mb="2rem">
             <Box
               display="flex"
@@ -29,7 +30,7 @@ const Exp = () => {
                 fontStyle={"italic"}
                 fontFamily="Poppins"
               >
-                {">> "} Frontend Development Intern - Nodebrew
+                {">> "} SDE Intern - AtomXel
               </Typography>
               <Typography
                 color="#13BAD4"
@@ -37,7 +38,7 @@ const Exp = () => {
                 fontWeight={"400"}
                 fontStyle={"italic"}
               >
-                Dec 2023 - Feb 2024
+                July 2024 – Present
               </Typography>
             </Box>
 
@@ -49,76 +50,32 @@ const Exp = () => {
               backgroundColor="#07091B"
             >
               <img
-                src={nodebrew}
+                src={atomxelLogo}
                 width={isNotMobile ? "80px" : "100px"}
                 height={isNotMobile ? "80px" : "100px"}
                 style={{ objectFit: "cover" }}
-                alt="pic"
+                alt="AtomXel Logo"
               />
               <Typography
                 fontFamily="Poppins"
                 backgroundColor="#07091B"
                 fontSize={"15px"}
               >
-                Designed and developed the frontend of the Nodebrew website for
-                an all-women hackathon organized by a non-profit organization in
-                a team of talented women. <br /> Utilized frontend technologies
-                including React.js, HTML, CSS, and Bootstrap to create an
-                engaging and user-friendly interface.
-              </Typography>
-            </Box>
-          </Box>
-
-          <Box border="1px solid #13BAD4">
-            <Box
-              display="flex"
-              flexDirection={isNotMobile ? "row" : "column"}
-              justifyContent={"space-between"}
-              p="0.5rem"
-              borderBottom="1px solid #13BAD4"
-            >
-              <Typography
-                color="#6AFFF0"
-                fontWeight={"400"}
-                fontSize="1.2rem"
-                fontStyle={"italic"}
-                fontFamily="Poppins"
-              >
-                {">> "}Software Engineering Intern - Jyra Consulting Inc
-              </Typography>
-              <Typography
-                color="#13BAD4"
-                fontFamily="Poppins"
-                fontWeight={"400"}
-                fontStyle={"italic"}
-              >
-                Jun 2023 - Aug 2023
-              </Typography>
-            </Box>
-
-            <Box
-              display="flex"
-              flexDirection={isNotMobile ? "row" : "column"}
-              gap={isNotMobile ? "4rem" : "2rem"}
-              p="2rem"
-              backgroundColor="#07091B"
-            >
-              <img
-                src={jyra}
-                width={isNotMobile ? "80px" : "100px"}
-                height={isNotMobile ? "80px" : "100px"}
-                style={{ objectFit: "cover" }}
-                alt="pic"
-              />
-              <Typography
-                fontFamily="Poppins"
-                backgroundColor="#07091B"
-                fontSize={"15px"}
-              >
-                Leveraged the Google Cloud Platform to create, manage, and host
-                a WordPress website for the company. Seamlessly connected the
-                website to the domain and implemented load balancers, ensuring
-                optimal performance and a cohesive online presence.
+                • Engineered and deployed scalable RESTful APIs with the MERN
+                stack, enhancing data retrieval speed and user experience.<br />
+                • Led cross-platform app development with React Native, Next.js, and TypeScript
+                for flagship projects, boosting performance and user engagement.<br />
+                • Optimized PostgreSQL schemas by deriving only necessary data
+                columns and using relational model associations and indexing,
+                achieving 40-55% faster query performance for managing 10,000+ products
+                in a high-traffic B2B application.<br />
+                • Implemented a tree-based hierarchical category system (L1, L2, L3)
+                for product browsing, combined with granular category-based access
+                control to enable personalized content delivery based on user roles
+                and subscriptions.<br />
+                • Integrated a ticket and inquiry-based chat system, providing users
+                with timely notifications for product or message updates, enhancing
+                customer support responsiveness and streamlining issue resolution processes.
               </Typography>
             </Box>
           </Box>

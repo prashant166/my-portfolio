@@ -89,7 +89,7 @@ const Contact = () => {
                 <Box p="1rem" backgroundColor="#313030" borderRadius="5px">
                   <a
                     href={resume}
-                    download="AdvikaKharat_Resume"
+                    download="Prashant_Resume"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -125,22 +125,22 @@ const Contact = () => {
 
           <ContactModal
             name="email"
-            url="mailto:kharatadvika.com"
-            desc="kharatadvika@gmail.com"
+            url="mailto:prashantpyadav9@gmail.com"
+            desc="prashantpyadav9@gmail.com"
           />
           <ContactModal
             name="linkedin"
-            url="https://www.linkedin.com/in/advika-kharat-41917322a/"
+            url="https://www.linkedin.com/in/prashantyadav166/"
             desc="view linkedin profile"
           />
           <ContactModal
             name="github"
-            url="https://github.com/advika-kharat"
+            url="https://github.com/prashant166"
             desc="view github profile"
           />
           <ContactModal
             name="leetcode"
-            url="https://leetcode.com/advika_kharat"
+            url="https://leetcode.com/u/prashantyadav161111/"
             desc="view leetcode profile"
           />
 

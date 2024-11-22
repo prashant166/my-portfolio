@@ -4,7 +4,7 @@ import { useMediaQuery } from "@mui/material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Alert from "@mui/material/Alert";
-import adipic from "./images/adipic.jpg";
+import prashantpic2 from './images/prashantpic2.png'
 import { Fade } from "react-reveal";
 import Heading from "./components/heading";
 
@@ -80,7 +80,7 @@ const Home = () => {
                 color: "#11D6F4",
               }}
               sequence={[
-                `const Portfolio = () => {\n ‎ ‎ const name="Advika Kharat";\n‎ ‎  const bio="Full Stack Web Developer"; \n ‎ ‎ const handleClick = () => {\n  ‎ ‎ ‎ ‎ navigate("/nextPage");\n‎ ‎  }\n ‎ ‎ return (\n  ‎ ‎ ‎ ‎ <button onClick={handleClick}> get to know me better </button>\n )\n ‎ ‎ export default Portfolio;
+                `const Portfolio = () => {\n ‎ ‎ const name="Prashant Yadav";\n‎ ‎  const bio="Software Developer"; \n ‎ ‎ const handleClick = () => {\n  ‎ ‎ ‎ ‎ navigate("/nextPage");\n‎ ‎  }\n ‎ ‎ return (\n  ‎ ‎ ‎ ‎ <button onClick={handleClick}> get to know me better </button>\n )\n ‎ ‎ export default Portfolio;
     
                 `, 
                 300,
@@ -115,7 +115,7 @@ const Home = () => {
               pl="1rem"
               backgroundColor="transparent"
             >
-              C:\Users\Advika{">    ‎‎ "}
+              C:\Users\Prashant{">    ‎‎ "}
               <InputBase
                 inputProps={{
                   style: {
@@ -149,7 +149,7 @@ const Home = () => {
             }}
           >
             <img
-              src={adipic}
+              src={prashantpic2}
               alt="pic"
               style={{
                 objectFit: "cover",
@@ -168,7 +168,7 @@ const Home = () => {
                   fontSize: "2rem",
                 }}
               >
-                Advika Kharat
+                Prashant Yadav
               </Typography>
               <Typography
                 style={{
