@@ -5,7 +5,8 @@ import Navbar from "./components/navbar";
 import { useMediaQuery } from "@mui/material";
 import file from "./images/file.png";
 import { useState } from "react";
-import resume from "./images/advika_resume (7).pdf";
+import resumepic from "./images/resume-pic.png"
+import resume from "./images/PrashantResume.pdf";
 import ContactModal from "./components/contact";
 import { Fade } from "react-awesome-reveal";
 
@@ -75,7 +76,7 @@ const Contact = () => {
                 backgroundColor: "rgba(49, 48, 48, 0.8)",
               }}
             >
-              <Box sx={style}>
+<Box sx={style}>
                 <Typography
                   backgroundColor="#69ADB5"
                   color="black"
@@ -88,12 +89,12 @@ const Contact = () => {
                 </Typography>
                 <Box p="1rem" backgroundColor="#313030" borderRadius="5px">
                   <a
-                    href={resume}
+                    href={resumepic}
                     download="Prashant_Resume"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <button
+     <button
                       style={{
                         backgroundColor: "#313030",
                         fontFamily: "Courier Prime",
@@ -107,22 +108,21 @@ const Contact = () => {
                     >
                       Download Resume
                     </button>
-                  </a>
+                    </a>
 
-                  <Typography
-                    style={{
-                      fontFamily: "Poppins",
-                      backgroundColor: "#313030",
-                      paddingTop: "1rem",
-                    }}
-                  >
-                    click anywhere to close
+<Typography
+  style={{
+    fontFamily: "Poppins",
+    backgroundColor: "#313030",
+    paddingTop: "1rem",
+  }}
+>
+click anywhere to close
                   </Typography>
                 </Box>
               </Box>
             </Modal>
           </Box>
-
           <ContactModal
             name="email"
             url="mailto:prashantpyadav9@gmail.com"
@@ -146,7 +146,7 @@ const Contact = () => {
 
           <ContactModal
             name="source code"
-            url="https://github.com/advika-kharat/portfolio-website"
+            url="https://github.com/prashant166/my-portfolio"
             desc="view source code"
           />
         </Box>

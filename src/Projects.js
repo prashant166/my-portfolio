@@ -2,11 +2,11 @@ import { Box, Typography } from "@mui/material";
 import Heading from "./components/heading";
 import { useMediaQuery } from "@mui/material";
 import Navbar from "./components/navbar";
-import myfolio from "./images/myfolio.png";
-import mvr from "./images/mvr.png";
-import fashioned from "./images/fashioned.png";
-import transactions from "./images/transactions.png";
-import learnify from "./images/learnify.png";
+import myfolio from "./images/pulsecare.png";
+import mvr from "./images/bookstore.png";
+import fashioned from "./images/bookmyshow.png";
+import transactions from "./images/merge.png";
+import learnify from "./images/grocerystore.png";
 import { Fade } from "react-awesome-reveal";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import ProjectComponent from "./components/projects";
@@ -29,34 +29,36 @@ const Projects = () => {
       >
         <Fade cascade damping={0.1}>
           <ProjectComponent
-            title="Myfolio-Portfolio Building Application"
-            description="Designed and built an online platform to help users create personal portfolios, and turn them into deployable websites to use for job applications and hiring."
-            tech="MongoDB, Express.js, Node.js, EJS, CSS"
+            title="CarePulse - Healthcare appointment booking app"
+            description="A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications. "
+            tech="TypeScript, NextJs, Tailwind CSS, ShadCN, Twilio, Appwrite"
             img={myfolio}
             link="https://myfolio-backend.onrender.com/"
             isNotMobile={isNotMobile}
           />
 
           <ProjectComponent
-            title="Movie Recommmendation System"
-            description="Implemented a recommendation system to display top five movies
-                closest to the movie selected by users. Used content-based
-                filtering and cosine similarity to measure movie feature
-                similarity."
-            tech="Sci-Kit Learn, Pandas, Python, Streamlit"
+            title="Bookstore Application"
+            description="Developed a bookstore application offers a user-friendly platform with a smooth and visually appealing interface. It features dark mode for comfortable browsing, a free books section accessible to all, and an exclusive courses section for authorized users. The application ensures secure user authentication and is fully optimized for mobile and desktop devices, providing a seamless experience across platforms."
+            tech="ReactJs, NodeJs, ExpressJs, MongoDB, Tailwind CSS, DaisyUI"
             img={mvr}
             link="https://advika-recommends-movies.streamlit.app/"
             isNotMobile={isNotMobile}
           />
 
           <ProjectComponent
-            title="Transactions Tracker"
-            description="  Developed a robust Spring Boot application to help users
-                efficiently track their daily transactions. Utilized Microsoft
-                Azure to create, deploy and manage a secure, cloud-based MySQL
-                database, ensuring data integrity and scalability."
-            tech="Spring Boot, Microsoft Azure, Thymeleaf, MySQL,
-                  Bootstrap"
+            title="Merge - Multi-User Video Calling Application"
+            description="  Merge is a cutting-edge video communication platform designed for seamless multi-user connectivity. With dynamic bitrate adjustment, it ensures lag-free video calls, even in challenging network conditions. Merge includes powerful features like screen sharing for collaborative sessions, live chat to keep users engaged, and an AI-powered automated bot delivering smart, real-time replies. Whether for work or play, Merge creates an immersive, smooth, and interactive video experience that keeps you connected and engaged"
+            tech="JavaScript, CSS, WebRTC"
+            img={transactions}
+            link="https://github.com/advika-kharat/moneytracc"
+            isNotMobile={isNotMobile}
+          />
+
+<ProjectComponent
+            title="Merge - Multi-User Video Calling Application"
+            description="  Merge is a cutting-edge video communication platform designed for seamless multi-user connectivity. With dynamic bitrate adjustment, it ensures lag-free video calls, even in challenging network conditions. Merge includes powerful features like screen sharing for collaborative sessions, live chat to keep users engaged, and an AI-powered automated bot delivering smart, real-time replies. Whether for work or play, Merge creates an immersive, smooth, and interactive video experience that keeps you connected and engaged"
+            tech="JavaScript, CSS, WebRTC"
             img={transactions}
             link="https://github.com/advika-kharat/moneytracc"
             isNotMobile={isNotMobile}

@@ -2,12 +2,12 @@ import { Box } from "@mui/material";
 import Heading from "./components/heading";
 import Navbar from "./components/navbar";
 import Index from "./components/fun";
-import fmr from "./images/fmr.png";
-import kala from "./images/kala.png";
-import dino from "./images/dino.png";
-import dad from "./images/dad.png";
-import calci from "./images/calci.png";
-import blog from "./images/blog.png";
+import fmr from "./images/car.png";
+import kala from "./images/merge.png";
+import dino from "./images/phishnet.png";
+import dad from "./images/quicksign.png";
+import calci from "./images/typing.png";
+import blog from "./images/minimalist.png";
 import { useMediaQuery } from "@mui/material";
 import { Fade } from "react-awesome-reveal";
 
@@ -48,7 +48,7 @@ const Fun = () => {
             desc="a blog application"
             link="https://github.com/advika-kharat/Reactjs-Blog_Application"
           />
-
+{/* 
           <Index
             img={kala}
             name="kala"
@@ -61,7 +61,7 @@ const Fun = () => {
             name="jump dino jump"
             desc="infamous internet dinosaur game"
             link="https://adisdinogame.netlify.app/"
-          />
+          /> */}
 
           <Index
             img={calci}
