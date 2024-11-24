@@ -5,6 +5,7 @@ import Navbar from "./components/navbar";
 import myfolio from "./images/pulsecare.png";
 import mvr from "./images/bookstore.png";
 import fashioned from "./images/bookmyshow.png";
+import phisnet from "./images/phishnet.png"
 import transactions from "./images/merge.png";
 import learnify from "./images/grocerystore.png";
 import { Fade } from "react-awesome-reveal";
@@ -33,7 +34,7 @@ const Projects = () => {
             description="A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications. "
             tech="TypeScript, NextJs, Tailwind CSS, ShadCN, Twilio, Appwrite"
             img={myfolio}
-            link="https://myfolio-backend.onrender.com/"
+            link="https://care-pulse-healthpulse.vercel.app/"
             isNotMobile={isNotMobile}
           />
 
@@ -42,16 +43,16 @@ const Projects = () => {
             description="Developed a bookstore application offers a user-friendly platform with a smooth and visually appealing interface. It features dark mode for comfortable browsing, a free books section accessible to all, and an exclusive courses section for authorized users. The application ensures secure user authentication and is fully optimized for mobile and desktop devices, providing a seamless experience across platforms."
             tech="ReactJs, NodeJs, ExpressJs, MongoDB, Tailwind CSS, DaisyUI"
             img={mvr}
-            link="https://advika-recommends-movies.streamlit.app/"
+            link="https://bookstore-ivory-two.vercel.app/"
             isNotMobile={isNotMobile}
           />
 
           <ProjectComponent
-            title="Merge - Multi-User Video Calling Application"
-            description="  Merge is a cutting-edge video communication platform designed for seamless multi-user connectivity. With dynamic bitrate adjustment, it ensures lag-free video calls, even in challenging network conditions. Merge includes powerful features like screen sharing for collaborative sessions, live chat to keep users engaged, and an AI-powered automated bot delivering smart, real-time replies. Whether for work or play, Merge creates an immersive, smooth, and interactive video experience that keeps you connected and engaged"
-            tech="JavaScript, CSS, WebRTC"
-            img={transactions}
-            link="https://github.com/advika-kharat/moneytracc"
+            title="PhishNet.AI - Tool to verify fake websites"
+            description="Phisnet is a tool helps identify malicious URLs and alerts users in real time. By incorporating machine learning models and web scraping techniques, PhishNet.AI can effectively differentiate between safe and phishing websites, helping users stay protected online."
+            tech="Javascript, Machine Learning, Python"
+            img={phisnet}
+            link="https://github.com/prashant166/PhishNet.AI"
             isNotMobile={isNotMobile}
           />
 
@@ -60,20 +61,16 @@ const Projects = () => {
             description="  Merge is a cutting-edge video communication platform designed for seamless multi-user connectivity. With dynamic bitrate adjustment, it ensures lag-free video calls, even in challenging network conditions. Merge includes powerful features like screen sharing for collaborative sessions, live chat to keep users engaged, and an AI-powered automated bot delivering smart, real-time replies. Whether for work or play, Merge creates an immersive, smooth, and interactive video experience that keeps you connected and engaged"
             tech="JavaScript, CSS, WebRTC"
             img={transactions}
-            link="https://github.com/advika-kharat/moneytracc"
+            link="https://github.com/prashant166/Merge-VideoChat"
             isNotMobile={isNotMobile}
           />
 
           <ProjectComponent
-            title="Fashioned - Social Media Application"
-            description=" Designed and built a social media web application that does CRUD
-                operations made specially for the community of fashion freaks.
-                Users can upload their posts with images and captions related to
-                new emerging fashion trends, and show off their outfits to their
-                friend users."
-            tech="MongoDB, ExpressJs, ReactJs, NodeJs, Material UI"
+            title="CinePlus - Ticket Booking Application"
+            description=" Designed and built a backend focused ticket booking application where user can select seats and movie of their choice and also can retrieve previous bookings, also would get email on every successful booking."
+            tech="MongoDB, ExpressJs, ReactJs, NodeJs"
             img={fashioned}
-            link="https://fashioned.netlify.app"
+            link="https://github.com/prashant166/bookMyShow"
             isNotMobile={isNotMobile}
           />
 
@@ -87,7 +84,7 @@ const Projects = () => {
               pt="0.5rem"
               pl="1rem"
             >
-              {"    >>  "}Learnify - AI Powered Learning Platform
+              {"    >>  "}Grocery Store Management
             </Typography>
             <Box display="flex" flexDirection={isNotMobile ? "row" : "column"}>
               <img
@@ -99,16 +96,12 @@ const Projects = () => {
                 }}
               />
               <Typography fontFamily={"Poppins"} p="1rem" color="#FFFFFF">
-                Developed the frontend for an AI powered E-learning website that
-                uses OpenAI’s GPT-3 for a personalized learning experience.
-                Users can search for specific topics and receive question banks,
-                online resources and nearby libraries according to the topics
-                searched.
+              The Grocery Store Management project simplifies operations with Python and Flask for the backend and a MySQL-powered frontend. It handles inventory, sales, and orders efficiently while enabling customer management and personalized service. Built-in analytics provide insights into sales trends and inventory performance, aiding better decision-making.
                 <br />
                 <br />
                 <Typography color="#7FE3F2" fontFamily={"Poppins"}>
-                  Tech Stack: HTML, CSS, Bootstrap, JavaScript, Flask,
-                  SQLAlchemy
+                  Tech Stack: HTML, CSS, Bootstrap, JavaScript, Python(Flask),
+                  MySQL
                   <br />
                   <br />
                 </Typography>
@@ -122,7 +115,7 @@ const Projects = () => {
                   padding="0.3rem"
                 >
                   <a
-                    href="https://github.com/advika-kharat/learnify/"
+                    href="https://github.com/prashant166/grocery-store"
                     fontSize="10px"
                     target="_blank"
                     rel="noreferrer"

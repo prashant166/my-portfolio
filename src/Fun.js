@@ -8,6 +8,7 @@ import dino from "./images/phishnet.png";
 import dad from "./images/quicksign.png";
 import calci from "./images/typing.png";
 import blog from "./images/minimalist.png";
+import filesharing from "./images/filesharing.png"
 import { useMediaQuery } from "@mui/material";
 import { Fade } from "react-awesome-reveal";
 
@@ -30,23 +31,23 @@ const Fun = () => {
         <Fade cascade damping={0.1}>
           <Index
             img={dad}
-            name="random dad joke generator"
-            desc="press the button, generate a dad joke"
-            link="https://dadjokesrandom.netlify.app/"
+            name="QuickSign - Digital signature app"
+            desc="You want to sign a document digitally? This is for you"
+            link="https://github.com/prashant166/instant-sign"
           />
 
           <Index
             img={fmr}
-            name="find my recipe"
-            desc="a search engine for recipes on the internet"
-            link="https://find-my-recipe-adi.netlify.app/"
+            name="Car Managment App"
+            desc="List, View, Update, Search your favourite cars"
+            link="https://github.com/prashant166/car-frontend"
           />
 
           <Index
             img={blog}
-            name="adi's blog"
-            desc="a blog application"
-            link="https://github.com/advika-kharat/Reactjs-Blog_Application"
+            name="Minimalist Site"
+            desc="Clone of minimalist site(did it for fun while learning NextJs"
+            link="https://github.com"
           />
 {/* 
           <Index
@@ -65,9 +66,15 @@ const Fun = () => {
 
           <Index
             img={calci}
-            name="calculator"
-            desc="want to add something up?"
-            link="https://adis-calci.netlify.app/"
+            name="Typing test"
+            desc="test how fast your fingers do run on the keyboard"
+            link="https://github.com/prashant166/typingtest"
+          />
+          <Index
+            img={filesharing}
+            name="File Saring App"
+            desc="Get a downloadable link of your files"
+            link="https://github.com/prashant166/file-sharing-app"
           />
         </Fade>
       </Box>

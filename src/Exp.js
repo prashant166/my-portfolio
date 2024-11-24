@@ -75,7 +75,9 @@ const Exp = () => {
                 and subscriptions.<br />
                 • Integrated a ticket and inquiry-based chat system, providing users
                 with timely notifications for product or message updates, enhancing
-                customer support responsiveness and streamlining issue resolution processes.
+                customer support responsiveness and streamlining issue resolution processes.<br />
+                • Created admin dashboard features, including real-time analytics, session tracking, event logging, and visualized user behavior data.<br />
+                • Added location-based auto-fill to pre-fill addresses in product listings and profiles, enhancing user experience.
               </Typography>
             </Box>
           </Box>
