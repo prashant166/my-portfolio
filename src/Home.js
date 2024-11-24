@@ -4,8 +4,8 @@ import { useMediaQuery } from "@mui/material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Alert from "@mui/material/Alert";
-import prashantpic2 from './images/prashantpic2.png'
-import { Fade } from "react-reveal";
+import prashantpic2 from "./images/prashantpic2.png";
+import { motion } from "framer-motion";
 import Heading from "./components/heading";
 
 const Home = () => {
@@ -49,6 +49,12 @@ const Home = () => {
   };
 
   const isNotMobile = useMediaQuery("(min-width:1024px)");
+
+  // Variants for animations
+  const textAnimationVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
 
   return (
     <Box mb="2rem">
@@ -158,7 +164,11 @@ const Home = () => {
                 borderRadius: "50%",
               }}
             />
-            <Fade bottom>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={textAnimationVariants}
+            >
               <Typography
                 style={{
                   fontFamily: "Poppins",
@@ -205,7 +215,7 @@ const Home = () => {
               >
                 get to know me better {">>"}
               </button>
-            </Fade>
+            </motion.div>
           </Box>
         </Box>
       </Box>

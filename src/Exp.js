@@ -1,19 +1,27 @@
 import { Box, Typography } from "@mui/material";
 import Heading from "./components/heading";
 import Navbar from "./components/navbar";
-import { Fade } from "react-awesome-reveal";
+import { motion } from "framer-motion";
 import { useMediaQuery } from "@mui/material";
 
 const atomxelLogo = "https://media.licdn.com/dms/image/v2/C4E0BAQE_SAlUpXqgyg/company-logo_200_200/company-logo_200_200/0/1633429515481?e=1740614400&v=beta&t=UVtOYnIY84MuDwT9u1bzVcvRz62ouxmI8k4FRCloO5E";
 
 const Exp = () => {
   const isNotMobile = useMediaQuery("(min-width:1024px)");
+
+  // Motion Variants for Fade
+  const fadeVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, staggerChildren: 0.2 } },
+  };
+
   return (
     <Box mb="10rem">
       <Heading name="Experience" />
 
       <Box mt="3rem" maxWidth={"80%"} ml="auto" mr="auto">
-        <Fade cascade damping={0.5}>
+        {/* Motion wrapper for fade animation */}
+        <motion.div initial="hidden" animate="visible" variants={fadeVariants}>
           {/* AtomXel Experience */}
           <Box border="1px solid #13BAD4" mb="2rem">
             <Box
@@ -81,7 +89,7 @@ const Exp = () => {
               </Typography>
             </Box>
           </Box>
-        </Fade>
+        </motion.div>
       </Box>
       <Navbar prev="" next="skills" />
     </Box>

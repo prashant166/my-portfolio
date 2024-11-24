@@ -1,13 +1,14 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+
+import React, { useState } from "react";
 import { Box, Typography, Modal } from "@mui/material";
 import Heading from "./components/heading";
 import Navbar from "./components/navbar";
 import { useMediaQuery } from "@mui/material";
+import { motion } from "framer-motion";
 import file from "./images/file.png";
-import { useState } from "react";
-import resumepic from "./images/resume-pic.png"
+import resumepic from "./images/resume-pic.png";
 import ContactModal from "./components/contact";
-import { Fade } from "react-awesome-reveal";
 
 const style = {
   position: "absolute",
@@ -20,6 +21,11 @@ const style = {
   p: 0,
   borderRadius: "10px",
   textAlign: "center",
+};
+
+const fadeVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, staggerChildren: 0.2 } },
 };
 
 const Contact = () => {
@@ -40,7 +46,8 @@ const Contact = () => {
     <Box>
       <Heading name="ContactMe" />
 
-      <Fade cascade damping={0.5}>
+      {/* Motion wrapper for fade animation */}
+      <motion.div initial="hidden" animate="visible" variants={fadeVariants}>
         <Box
           display={isNotMobile ? "flex" : "grid"}
           gridTemplateColumns={"repeat(2,1fr)"}
@@ -75,7 +82,7 @@ const Contact = () => {
                 backgroundColor: "rgba(49, 48, 48, 0.8)",
               }}
             >
-<Box sx={style}>
+              <Box sx={style}>
                 <Typography
                   backgroundColor="#69ADB5"
                   color="black"
@@ -93,7 +100,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-     <button
+                    <button
                       style={{
                         backgroundColor: "#313030",
                         fontFamily: "Courier Prime",
@@ -107,16 +114,15 @@ const Contact = () => {
                     >
                       Download Resume
                     </button>
-                    </a>
-
-<Typography
-  style={{
-    fontFamily: "Poppins",
-    backgroundColor: "#313030",
-    paddingTop: "1rem",
-  }}
->
-click anywhere to close
+                  </a>
+                  <Typography
+                    style={{
+                      fontFamily: "Poppins",
+                      backgroundColor: "#313030",
+                      paddingTop: "1rem",
+                    }}
+                  >
+                    click anywhere to close
                   </Typography>
                 </Box>
               </Box>
@@ -149,7 +155,7 @@ click anywhere to close
             desc="view source code"
           />
         </Box>
-      </Fade>
+      </motion.div>
 
       <Navbar prev="fun" />
     </Box>
