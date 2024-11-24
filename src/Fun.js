@@ -3,8 +3,6 @@ import Heading from "./components/heading";
 import Navbar from "./components/navbar";
 import Index from "./components/fun";
 import fmr from "./images/car.png";
-import kala from "./images/merge.png";
-import dino from "./images/phishnet.png";
 import dad from "./images/quicksign.png";
 import calci from "./images/typing.png";
 import blog from "./images/minimalist.png";

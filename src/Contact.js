@@ -1,12 +1,11 @@
 import React from "react";
-import { Box, Typography, Modal, Button } from "@mui/material";
+import { Box, Typography, Modal } from "@mui/material";
 import Heading from "./components/heading";
 import Navbar from "./components/navbar";
 import { useMediaQuery } from "@mui/material";
 import file from "./images/file.png";
 import { useState } from "react";
 import resumepic from "./images/resume-pic.png"
-import resume from "./images/PrashantResume.pdf";
 import ContactModal from "./components/contact";
 import { Fade } from "react-awesome-reveal";
 
